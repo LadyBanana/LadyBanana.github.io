@@ -19,7 +19,7 @@ Content-type: texp/plain; charset=koi8-r
 Какое-нибудь сообщение";
  
 $message = convert_cyr_string($message,"w","k");
-if (mail("prizrak_001@yahoo.com","",$message))
+if (mail("danielsadovskiy@gmail.com","",$message))
    echo "Успех";
 else
    echo "Неудача";
