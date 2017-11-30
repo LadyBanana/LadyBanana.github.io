@@ -1,0 +1,111 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 4px 4px;
+    text-decoration: none;
+}
+pht{
+    height: 150px;
+    width: 150px;
+} 
+p{
+    margin-top: 0px;
+    
+text-align: center;
+font-size: 40px;
+    font-weight: 600;
+
+}
+.back1{
+    background-image: url(img/web-designer.png);
+    
+    background-repeat: no-repeat;
+    float: right;
+    padding: 0px;
+}
+.back2{
+    
+    background-image: url(img/php-programmer.png);
+    background-repeat: no-repeat;
+    padding: 0px;
+   
+}
+.back3{
+    
+    
+   
+    background-image: url(img/programmer.png);
+     background-repeat: no-repeat;
+    padding: 0px;
+    
+}
+.blcked{
+    margin-left: 20px;
+}
+.textin{
+    margin-top: 70px;
+    margin-left: 0px;
+    
+}
+
+footer{
+    margin-top: 80px;
+    margin-bottom: 0px;
+    border: 1px solid black;
+    
+}
+
+.ustext{
+    font-size: 12px;
+}
+.down{
+    margin-top: 70px;
+}
+.down1{
+    margin-top:-20px;
+}
+.mapblock{
+    
+    
+    margin: center;
+}
+.map{
+    
+    
+
+
+}
+.head{
+    color: white;
+    font-size: 52px;
+}
+.smaller{
+    font-size: 16px;
+}
+
+.feedback{
+    border: none;
+}
+#formy{
+    background-color: transparent;
+    outline: none;
+}
+.inputy{
+   
+    border: none;
+    background-color: transparent;
+}
+.inputy::-webkit-input-placeholder {color:white;}

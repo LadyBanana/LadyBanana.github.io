@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="first.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="jquery.backgroundvideo.min.js" defer></script>
+    <script src ="videobackground.min.js" defer ></script>
+  <script>
+      function send_form() { 
+var msg = $("#forma").serialize();
+$.ajax({
+type: "POST",
+url: "mail.php",
+data: msg,
+success: function(data) {
+alert("Sendy");
+setTimeout(function () {
+$(".feedback_form_bg").fadeOut();}, 1000);
+},
+error:  function(xhr, str){
+alert("Error!");
+setTimeout(function () {$(".feedback_form_bg").fadeOut();}, 1000);
+}
+});
+      }
+    </script>
+     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+  <div class="w3-top w3-hide-large " id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+   <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">Home </a>
+    <a href="services.html" class="w3-bar-item w3-button" style="width:25% !important">Services</a>
+    
+    <a href="vacancies.html" class="w3-bar-item w3-button" style="width:25% !important">Vacancies</a>
+    <a href="vacancies.html" class="w3-bar-item w3-button" style="width:25% !important">Vacancies</a>
+    
+  </div>
+</div>
+<div class="header w3-hide-small w3-hide-medium ">
+    <div>
+        <ul>
+          
+              <li><a href="index.html"><img class="divimg w3- " src="img/logo-menu.png" alt=""></a></li>
+          
+              <li><a href="main.html">Clients</a></li>
+          
+              <li><a href="vacancies.html">Vacancies</a></li>
+          
+               <li><a href="services.html">Services</a></li>
+          
+        </ul>
+    </div>
+</div>
+<div class="mapblock w3-center">
+                <p class="head  w3-hide-small w3-hide-medium" >Contact us<p>
+            <p class=" smaller w3-text-white">432072, Ulyanovsk, street of Karbishev 8</p>
+            
+            
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2324.3334891457816!2d48.58244331593127!3d54.36875798020603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415d3f2f4dd6aa49%3A0xd289df561a5e5ef6!2z0J7QntCeICLQodCw0L_Qv9C-0YDRgtC40LrRgSIgKFNVUFBPUlRpeCk!5e0!3m2!1sru!2sua!4v1510872139765"    allowfullscreen></iframe>
+            
+            <p class=" smaller w3-text-white">+7 (8422) 58-73-56</p>
+            <p class=" smaller w3-text-white" >danielsadovskiy@gmail.com</p>
+<form method="post" action="javascript:void(0);" onsubmit="send_form();" id="forma">
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="SupportIX">
+		<input type="hidden" name="admin_email" value="danielsadovskiy@gmail.com">
+		<input type="hidden" name="form_subject" value="CV">
+		<!-- END Hidden Required Fields -->
+
+		<input class="inputy" type="text" name="fio" placeholder="You name..." required><br>
+		<input class="inputy" type="text" name="email" placeholder="You E-mail..." required><br>
+		<input class="inputy" type="text" name="phone" placeholder="You phone..."><br>
+		<button type="submit">Send</button>
+
+	</form>
+</div>
+
+
+
+
+</body>
+</html>
